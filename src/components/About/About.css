@@ -1,0 +1,276 @@
+/* ####achievement#### */
+.container8{
+    background-color: var(--color-bg);
+    width :100vw;
+    margin: auto;
+    height: auto;
+    }
+    .about__achievements {
+        margin: auto;
+        position: relative;
+        
+    }
+    .OIAhead{
+    padding:20px;
+    background-color: var(--color-bg);
+    color: var(--color-white);
+    border-radius: 20px;
+    border: 3px solid black;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .about__achievements-left{
+            margin: auto;
+    }
+    .about__achievements-left h3 {
+        color: var(--color-white);
+        margin: 1rem auto 0rem;
+    }
+    .about__achievements-left p{
+        color: var(--color-white);
+        margin: auto;
+       
+    }
+    .about__achievements,.about__achievements-container,.about__achievements-left,.about__achievements-right,.achievement_card,.card,.team{
+      animation: fadeIn 0.75s ease-out;
+    }
+    
+    @keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform:translateY(0px)
+    }
+    }
+    .about__achievements-right{
+        background-color:var(--color-white);
+        padding:0;
+        border-radius: 30px;
+        margin-top: 0;
+        box-shadow: 0 3rem 5rem rgba(7, 0, 0, 0.98);
+    }
+    .leftpic{
+        width: auto;
+        margin-top: 5rem;
+        height:400px ;
+        border: 3px solid #ddd;
+        border-radius: 10px;
+    }
+    
+    .about__achievements-container {
+        display: grid;
+        grid-template-columns: 0.75fr 1.25fr;
+    }
+    
+    
+    
+    .achievements__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+        
+    }
+    .rightpad{
+        /* padding:20px; */
+        margin: 3rem;
+    }
+    .rightpad p{
+        margin: 1.6rem 0 2.5rem;
+        font-size: smaller;
+        color: var(--color-bg);
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .achievement_card {
+        background-color: var(--color-white);
+        padding: 1.6rem;
+        border-radius: 1rem;
+        text-align: center;
+        transition: var(--transition);
+        border: 0.1px solid var(--color-bg);
+    }
+    
+    .achievement_card:hover {
+        box-shadow: 0 2rem 3rem rgba(7, 0, 0, 0.98);
+        cursor: pointer;
+    }
+    
+    .achievement_icon {
+        background: var(--color-danger);
+        padding: 0.3rem;
+        border-radius: 1rem;
+        display: block;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+    
+    .achievement_card:nth-child(2) .achievement_icon {
+        background: var(--color-success);
+    }
+    
+    .achievement_card:nth-child(3) .achievement_icon {
+        background: var(--color-primary);
+    }
+    
+    .achievement_card p {
+        margin-top: 1rem;
+        color: var(--color-bg);
+    }
+    
+    /* ###team### */
+    .team {
+        background-color: white;
+        box-shadow: inset var(--color-bg);
+    }
+    
+    
+    .team h1 {
+        text-align: center;
+        color: var(--color-bg);
+    }
+    
+    .card {
+        width: 280px;
+        height: 280px;
+        background-color: var(--color-bg);
+        border-radius: 15px;
+        margin: auto; 
+        box-shadow: 0 1rem 0.5rem rgba(7, 0, 0, 0.98);
+        transition: var(--transition);
+    }
+    
+    
+    .card:hover {
+        background-color: var(--color-bg1);
+        cursor: pointer;
+    }
+    .right-border-top{
+        width: 60%;
+        height: 3%;
+        margin:auto;
+        background: var(--color-bg);
+        border-radius: 0px 0px 15px 15px;
+    }
+    .card .card-border-top {
+        width: 60%;
+        height: 3%;
+        background: #ffffff;
+        margin: auto;
+        border-radius: 0px 0px 15px 15px;
+    }
+    
+    .card span {
+        font-weight: 600;
+        color: white;
+        text-align: center;
+        display: block;
+        padding-top: 10px;
+        font-size: 16px;
+    }
+    
+    .card .job {
+        font-weight: 400;
+        color: white;
+        display: block;
+        text-align: center;
+        padding-top: 3px;
+        font-size: 12px;
+    }
+    
+    .img img {
+        width: 175px;
+        height: 175px;
+        background: #6b64f3;
+        border-radius: 15px;
+        margin: auto;
+        margin-top: 25px;
+        border: 3px solid white;
+    }
+    
+    .carddisplay {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 1rem;
+        margin: auto;
+    }
+    
+    
+    
+    
+    /* ####tablet### */
+    @media screen and (max-width: 1224px) {
+        .about__achievements {
+            margin: 6rem;
+        }
+    
+        .about__achievements-container {
+            grid-template-columns: 1fr;
+            gap: 6rem;
+        }
+    
+        .leftpic{   
+            margin: auto;
+        }
+        .about__achievements-left h3{
+            margin:1rem auto 0rem;
+
+        }
+        .about__achievements-left p{
+            margin:auto ;
+        }
+    
+        .carddisplay{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4rem;
+            margin-left:0 ;
+        }
+    
+        .team__member {
+            padding: 1rem;
+        }
+    }
+    
+    /* #####mobile##### */
+    @media screen and (max-width: 768px) {
+        .about__achievements{
+            margin: 2rem 0rem 0rem 0rem;
+        }
+        .about__achievements-left h3{
+            margin: 1rem auto 0rem;
+        }
+        
+        .about__achievements-left p {
+            margin:auto;
+            font-size: smaller;
+        }
+        .about__achievements-right{
+            margin: 1rem;
+            height:120rem;
+        }
+        .about__achievements-right h1{
+            font-size: large;
+
+        }
+        .about__achievements-right p{
+            font-size: large;
+        }
+        .achievements__cards {
+            padding:10px;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+        }
+        .leftpic{
+            height:15rem;
+            width: 15rem;
+        }
+    
+        .carddisplay{
+            grid-template-columns: 1fr;
+            margin: 0% 2%;
+        }
+
+    }
+    

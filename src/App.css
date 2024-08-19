@@ -1,0 +1,86 @@
+.App
+{
+    position:relative;
+    overflow-x: clip;
+}
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    padding-top: 10rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100000000000;
+    
+  }
+
+  .popup-content img {
+    max-width: 100%;
+    max-height: 200px; 
+    border: 5px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+  .popup-content {
+    background: #fff;
+    color: var(--color-bg);
+    padding: 55px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(21, 20, 20, 0.905);
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+  }
+  .linktobrochure{
+    padding:15px;
+    background-color: var(--color-bg2);
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    border-radius: 12px;
+  }
+  .linktobrochure:hover{
+    background-color:var(--color-bg1);
+  }
+
+  .popup-header {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+  }
+
+  .icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top:-30px;
+    right:-16px;
+    color: white;
+  }
+  @media  screen and (max-width:1330px) {
+    .popup-overlay {
+      width: 100%;
+      height: 120%;
+      padding:3rem;
+    }
+  }
+  @media screen and (max-width:768px) {
+    .popup-overlay {
+      width: 100%;
+      height: 100%;
+      padding:3rem;
+    }
+  }
+
+  

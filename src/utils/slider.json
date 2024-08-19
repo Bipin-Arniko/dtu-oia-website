@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Aniket Raj Jha",
+    "mode": "ICCR",
+    "detail": "Choosing Delhi Technological University (DTU) for my higher education has been a transformative experience. As an international student, I was warmly welcomed into a vibrant and diverse academic community that fosters innovation and excellence.",
+    "image": "Profile Picture.jpeg"
+  },
+  {
+    "name": "Sanskar Ojha",
+    "mode": "ICCR",
+    "detail": "Ever since I started my journey at DTU, I've been amazed by the commitment of the faculty and staff to our success. The professors are not only experts in their fields but are also approachable and genuinely care about their students. ",
+    "image": "./avatar2.jpg"
+  },
+  {
+    "name": "Divyanjali Ray",
+    "mode": "ICCR",
+    "detail": "The campus is equipped with state-of-the-art facilities, providing an ideal environment for learning and research. The cultural diversity on campus has allowed me to make friends from around the globe, enriching my perspective and creating lasting connections. ",
+    "image": "./avatar1.jpg"
+  },
+  {
+    "name": "Bishal Agrawal",
+    "mode": "DASA",
+    "detail": "Attending DTU has been a transformative experience for me. The quality of education here is exceptional, with professors who are not only experts in their fields but also deeply committed to their students' success. The small class sizes have allowed for personalized attention, and I've had the opportunity to engage in meaningful discussions and research projects.",
+    "image": "./avatar3.jpg"
+  },
+  
+  {
+    "name": "K. Su. Prashant",
+    "mode": "DTU PORTAL",
+    "detail": "I am incredibly grateful for my experience at Delhi Technological University. DTU not only provided me with a top-notch education but also fostered an environment of innovation and collaboration. The dedicated faculty and state-of-the-art facilities contributed immensely to my academic growth. ",
+    "image": "./avatar3.jpg"
+  },
+  {
+    "name": "Ogul. Kerimova",
+    "mode": "ICCR",
+    "detail": "Beyond the classroom, the vibrant campus life, cultural events, and diverse student community made my time at DTU truly enriching. It's a place where learning extends far beyond textbooks, and I am proud to be a part of the DTU legacy. The skills and knowledge gained here have been invaluable in shaping my career journey. Thank you, DTU, for being the foundation of my success!",
+    "image": "./avatar3.jpg"
+  }
+]

@@ -1,0 +1,46 @@
+.bonafide{
+    position: absolute;
+    right: 0;
+    height: auto;
+    top:0;
+    padding: 0rem;
+    margin-top:2rem;
+    margin-bottom: 0rem;
+    z-index: 99999999999;
+}
+.btndashboard2{
+    display: inline-block;
+    padding:.5rem;
+    margin-right: 1rem;
+    background-color: var(--color-bg);
+    border-radius: .5rem;
+    color: white;
+    border: .01rem solid white;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.btndashboard2:hover{
+background-color: aliceblue;
+color: var(--color-bg1);
+}
+
+@media screen and (max-width:1328px){
+    .btndashboard2{
+        padding: .3rem;
+        font-size: small;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .bonafide{
+        margin-top: 3rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .btndashboard2{
+        padding: .3rem;
+        font-size: xx-small;
+        margin-right: .5rem;
+    }
+    
+}

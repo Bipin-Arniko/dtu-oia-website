@@ -1,0 +1,430 @@
+.contact {
+    margin: 10rem 3rem 1rem 3rem;
+    height: 45rem;
+  }
+  
+  .modeanchor{
+    display: inline;
+    position: absolute;
+    text-align: center;
+    right: 10rem;
+    font-size: medium;
+    padding: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 12px;
+    color: var(--color-white);
+    background-color: var(--color-bg);
+    border: 0.25px solid rgb(101, 80, 134);
+    transition: var(--transition);
+  }
+  
+  .modeanchor:hover {
+    background-color: var(--color-white);
+    color: var(--color-bg);
+  }
+  
+  /* Eligibility Popup Styles */
+  .eligibility-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(18, 3, 3, 0.764);
+    z-index: 9999999999;
+  }
+  
+  .eligibility-popup h3 {
+    margin-bottom: 10px;
+  }
+  
+  .eligibility-popup iframe {
+    width: 100%;
+    height: 70vh;
+    margin: 0;
+    border: none;
+  }
+  
+  .eligibility-popup button {
+    background-color: var(--color-bg);
+    color: #fff;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top-right-radius: 20px;
+  }
+  
+  .eligibility-popup button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Contact Container Styles */
+  .contact__container {
+    background-color: var(--color-white);
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+    height: 30rem;
+    margin: 3rem 4rem;
+    border-radius: 1rem;
+  }
+  
+  /* Contact Section Styles */
+  .contact,
+  .form__name,
+  .contact__details,
+  .contact__social,
+  .contact__social>a {
+    animation: fadeIn 0.75s ease-out;
+    font-size: medium;
+    text-align: left;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  
+  /* Contact Aside Styles */
+  .contact__aside {
+    background-color: var(--color-bg);
+    padding: 2rem;
+    border-radius: 1rem;
+    position: relative;
+    margin-top: 4rem;
+    border: 3px solid white;
+    bottom: 10rem;
+    align-items: center;
+  }
+  
+  /* Contact Aside Image Styles */
+  .aside__image {
+    width: 12rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Contact Aside Heading Styles */
+  .contact__aside>h2 {
+    text-align: left;
+    margin-bottom: 3rem;
+    font-size: xx-large;
+  }
+  
+  /* Contact Aside Paragraph Styles */
+  .contact__aside>p {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Contact Details List Styles */
+  .contact__details>li {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Contact Social Styles */
+  .contact__social {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 3rem;
+  }
+  
+  /* Contact Social Link Styles */
+  .contact__social>a {
+    background-color: var(--color-bg2);
+    padding: 0.5rem;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    transition: var(--transition);
+  }
+  
+  .contact__social>a:hover {
+    background-color: rgba(255, 255, 255, 0.69);
+  }
+  
+  /* Contact Form Styles */
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-right: 4rem;
+  }
+  
+  /* Form Name Styles */
+  .form__name {
+    display: flex;
+    gap: 0.8rem;
+  }
+  
+  /* Input and Textarea Styles */
+  .contact__form>input[type="text"],
+  input,
+  .comment{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: var(--color-bg);
+    color: white;
+  }
+  
+  .btn-developer-contact {
+    background-color: var(--color-white);
+    color: var(--color-bg);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border:0.1px solid white;
+    position: absolute;
+    left:43.75vw;
+    transition: var(--transition);
+  }
+  
+  .btn-developer-contact:hover {
+    background-color: var(--color-bg);
+    color: var(--color-white);
+  }
+
+  /* Button Styles */
+  /* .btn3 {
+    width: max-content;
+    margin-top: 1rem;
+    cursor: pointer;
+    background-color: var(--color-bg);
+    padding: 1rem;
+    color: #fff;
+    border: 0.1px solid var(--color-bg);
+    transition: var(--transition);
+  }
+  .btn3:hover {
+    background-color: var(--color-white);
+    color: var(--color-white);
+  } */
+  .popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  text-align: center;
+}
+
+.popup-content>h2 {
+  margin-bottom: 10px;
+}
+
+.popup-content>p {
+  margin-bottom: 20px;
+}
+
+.popup-content >button {
+  padding: 10px 20px;
+  background-color: var(--color-bg);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.popup-content>button:hover {
+  background-color: #0056b3;
+}
+
+  
+  .contact__form .btn:hover {
+    cursor: pointer;
+    color: var(--color-bg);
+    background-color: var(--color-success);
+  }
+  .developer-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.817);
+    z-index: 999999;
+  }
+  
+  .developer-popup-content {
+    text-align: center;
+    color: var(--color-bg);
+  }
+  .developer-popup-content>h2 {
+    margin-top: 1rem;
+  }
+  
+  .developer-image {
+    width: 100px; 
+    border-radius: 50%;
+    margin: auto;
+  }
+  
+  .developer-popup button {
+    background-color: var(--color-bg);
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 0.1px solid var(--color-bg);
+    transition: var(--transition);
+  }
+  
+  .developer-popup  button:hover {
+    background-color: white;
+    color:var(--color-bg)
+  }
+  
+  
+  /* Media Queries for Responsive Design */
+  @media screen and (max-width: 1024px) {
+    .popup-content {
+      max-width: 80vw; 
+      padding: 2rem;
+    }
+    .contact {
+      margin: 6rem 2rem 0 2rem;
+    }
+    .contact__container {
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+    }
+    .contact__aside {
+      width: 100%;
+      height: 22rem;
+      padding: 1.5rem;
+      bottom: 0;
+    }
+    .contact__form {
+      align-self: center;
+      margin-right: 0;
+    }
+    .modeanchor {
+      padding: 15px;
+    }
+    .eligibility-popup {
+      padding: 20px;
+    }
+    .eligibility-popup iframe {
+      height: 50vh;
+    }
+    .developer-popup-content {
+      font-size: x-small;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .popup-content {
+      max-width: 80vw; 
+      padding: 1rem;
+    }
+  
+    .popup-content button {
+      padding: 8px 16px; 
+    }
+    .contact {
+      margin-top: 6rem;
+      height: auto; 
+    }
+    .contact__details h5{
+      font-size: xx-small;
+    }
+    
+    .contact__aside {
+      width: 100%; 
+      margin-top: 7rem;
+      height: auto; 
+      bottom: 0;
+    }
+    
+    .contact__container {
+      grid-template-columns: 1fr;
+      gap:2rem;
+      margin: 0.5rem;
+      padding: 1rem;
+      height: auto; 
+    }
+    
+    .contact__form {
+      margin: 0.1rem 0 3rem; /* Adjust margin for better spacing */
+      width: 100%; /* Use full width on smaller screens */
+    }
+    
+    .form__name input[type="text"] {
+      width: 100%; /* Use full width on smaller screens */
+    }
+    
+    .modeanchor {
+      padding: 15px;
+      width: 100vw;
+      top: auto; 
+      left: 50%; 
+      transform: translateX(-50%); 
+      font-size: small; 
+      margin: 0rem 0rem 2rem 0rem;
+    }
+    
+    .eligibility-popup {
+      padding: 2px;
+    }
+    
+    .eligibility-popup iframe {
+      width: 100%; /* Use full width on smaller screens */
+      height: 45vh;
+      border: none;
+      z-index: 9999;
+    }
+    .btn-developer-contact {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+    .developer-popup-content>p{
+      font-size: xx-small;
+      margin-top: 1rem;
+    }
+
+    .developer-popup-content>h2{
+      font-size: small;
+      margin-top: 1rem;
+    }
+    .developer-popup button {
+      padding: 0.2rem;
+      font-size: x-small;
+    }
+    
+  }

@@ -1,0 +1,208 @@
+.notice-board {
+    max-width: 100%;
+    margin: 2.5rem auto 0rem;
+    padding:5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: rgb(255, 254, 254)  ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+    position:relative;
+    top:5rem;
+  }
+  
+  .notice-board h2 {
+    color:var(--color-bg1);
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .notice-board ul {
+    list-style: none;
+    padding: 0;
+    white-space: nowrap; 
+    overflow: hidden;
+    background-color: var(--color-bg1);
+  }
+  
+  .notice-board li {
+    display: inline-block; 
+    margin-right: 100px;
+    font-size: 16px;    
+    color: white;
+    line-height: 1.4;
+    animation: marquee 40s linear infinite; 
+  }
+  .see-all-button {
+    background-color: var(--color-bg1);
+    color: #fff;
+    border: 0.1px solid var(--color-bg1);
+    padding: 0.2rem;
+    cursor: pointer;
+    z-index: 10;
+    margin-top: 0.1rem;
+    transition: var(--transition);
+    position: absolute;
+    top:0.1rem;
+    right: 1rem;
+  }
+  
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .closecheck{
+    position: absolute;
+    top:0;
+    right:0;
+    padding:1rem;
+    border: 0.1px solid var(--color-bg1);
+    background-color: var(--color-bg1);
+    color:white;
+    transition: var(--transition);
+    cursor: pointer;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: auto;
+    margin: 0;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--color-bg1);
+    z-index: 100000000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .h2overlay{
+    text-align: center;
+  }
+  .modal ul{
+    margin-top: 3rem;
+    border: 0.1rem solid var(--color-bg1);
+    padding: 1rem;
+  }
+  .modal li{
+    margin: 1rem auto 1rem auto;
+    padding: 0.5rem;
+    font-size: small;
+    background-color:var(--color-bg1);
+    color: white;
+    border-radius: 1rem;
+  }
+  .next-page-button {
+    background-color: var(--color-bg1);
+    color:white;
+    border: 0.1px solid var(--color-bg1);
+    padding: 0.3rem;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 10px; 
+  }
+  .prev-page-button
+  {
+    background-color: var(--color-bg1);
+    color:white;
+    border: 0.1px solid var(--color-bg1);
+    padding: 0.3rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    transition: var(--transition);
+    margin-top: 10px;
+  }
+  .closecheck:hover, .next-page-button:hover, .prev-page-button:hover, .see-all-button:hover{
+    background-color: white;
+    color:var(--color-bg1)
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  
+  /* .notice-board li:hover {
+    animation-play-state: paused;
+  }
+   */
+/* 
+   @media (max-width: 1328px) {
+    .notice-board {
+      margin: 20px; 
+      font-size: 2px; 
+    }
+    .notice-board li {
+      animation: marquee 20s linear infinite; 
+      font-size: xx-small;
+    }
+    @keyframes marquee {
+      0% {
+        transform: translateX(50%);
+      }
+      100% {
+        transform: translateX(-250%);
+      }
+    }
+    .overlay{
+      padding: 1rem;
+    }
+  } */
+
+  @media screen and (max-width:1028px) {
+    .notice-board {
+      margin: 20px; 
+      font-size: 2px; 
+    }
+    .notice-board li {
+      animation: marquee 20s linear infinite; 
+      font-size: xx-small;
+    }
+    @keyframes marquee {
+      0% {
+        transform: translateX(50%);
+      }
+      100% {
+        transform: translateX(-250%);
+      }
+    }
+    .modal{
+      height: fit-content;
+      width: 80vw;
+    }
+    .modal li{
+      margin: 0.5rem;
+      font-size: xx-small;
+      text-align:start;
+
+    }
+    .modal ul{
+      margin-top: 0;
+    }
+    .modal h2{
+      margin-top: 1rem;
+    }
+    .prev-page-button{
+      margin-right:1rem;
+    }
+    .overlay{
+      padding:0;
+    }
+    
+  }

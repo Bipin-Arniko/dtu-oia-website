@@ -1,0 +1,134 @@
+.cover3{
+    background: url(login.png);
+    padding:1rem;
+    margin-top: 4.75rem;
+}
+.dtulogohead{
+    height:10rem;
+    width: 10rem;
+    margin:4rem auto 1rem;
+}
+.login-container {
+
+border-top:15px solid var(--color-bg2);
+  max-width: 400px;
+  border-bottom: 2px solid var(--color-bg2);
+  margin: 4rem auto 0rem;
+  height: auto;
+  padding: 20px;
+  color: black;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.845);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container label {
+  margin-bottom: 5px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.login-container button {
+  padding: 10px 20px;
+  background-color: var(--color-bg2);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+}
+.error-message {
+    color: var(--color-bg2);
+    margin-top:0.2rem;
+    text-align: center;
+    font-weight: 800;
+    font-size: small;
+  }
+  .manage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.manage>p{
+    color: var(--color-bg2);
+    background-color: #fff;
+    max-width: fit-content;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-top: 2rem;
+    font-size: smaller;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+  }
+  .frgt{
+    margin-top: 1rem;
+  }
+  .forgot-password-container{
+    padding:5rem;
+    background-color: #fff;
+    position:fixed;
+    top:50%;
+    left:50%;
+    border-radius: 3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.845);;
+    transform: translate(-50%,-50%);
+  }
+  .forgot-password-container>h2{
+    margin:0;
+    padding:0;
+    text-align: center;
+
+  }
+  .msg{
+    margin: 0;
+    text-align: center;
+  }
+  .contentfrgt{
+    margin: 0;
+    padding:1rem;
+  }
+  .emailsent{
+    background-color: var(--color-bg2);
+    padding:.5rem;
+    margin-left: 1rem;
+    color: #fff;
+  }
+  .closefrgt{
+    position:absolute;
+    top:0rem;
+    right:0rem;
+    padding: 1.5rem;
+    border-top-right-radius:2rem ;
+  }
+  .submit{
+    position: absolute;
+    top:45%;
+    right:15%;
+    padding: .5rem;
+
+  }
+  .enter{
+    background-color: #fff;
+    color: black;
+  }

@@ -1,0 +1,329 @@
+.container5 {
+    max-width: 100%;
+    margin: 7% 4% 2% 4%;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+}
+.important-links-section {
+  margin-top: 2rem;
+}
+.flipbook{
+  margin-top: 1rem;
+  border: .5px solid lightgray; 
+  width: 329px;
+   height: 477px;
+   margin-left: 25%;
+   border-radius: 2rem;
+}
+.important-links-section h3 {
+  color: var(--color-bg);
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.important-links-section ul {
+  list-style: none;
+}
+
+.linkanchor{
+  margin-top: 1rem;
+  display: block;
+  color: white;
+  text-align: center;
+  background-color: var(--color-bg);
+  padding: 12px;
+  border-radius:20px ;
+  transition: var(--transition);
+  border: 0.1px solid var(--color-bg);
+}
+
+.linkanchor:hover {
+  background-color: var(--color-white);
+  color: var(--color-bg);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px)
+  }
+}
+@keyframes fade{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+.container5,
+.noticeheader,
+.admissiondiv,
+.admissiongrid,
+.admissionleft,
+.admissionright,
+.notice-release{
+  animation: fadeIn 1s ease-out;
+}
+.eligibility-popup {
+  animation:fade 0.51s ease-in-out;
+}
+.noticeheader{
+    background-color: white;
+    padding:40px 30px 20px 30px;
+    border-radius: 20px;
+}
+.notice-date {
+    color: #555; 
+    font-size: 0.8rem; 
+  }
+.noticeheader>h3{
+    color: var(--color-white);
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: var(--color-bg);
+    padding:20px;
+    border-radius: 20px;
+}
+.eligibility-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(18, 3, 3, 0.764);
+    z-index: 9999999;
+  }
+  
+  .eligibility-popup h3 {
+    margin-bottom: 10px;
+  }
+  .eligibility-popup iframe {
+    width: 100%;
+    height: 70vh; 
+    margin: 0;
+    border: none;
+  }
+  
+  
+  .eligibility-popup button {
+    background-color: var(--color-bg);
+    color: #fff;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    right:0;
+    border-top-right-radius: 20px;
+  }
+  
+  .eligibility-popup button:hover {
+    background-color: #0056b3;
+  }
+  
+.container5 h1 {
+    color: var(--color-bg);
+    text-align: center;
+    margin-bottom: 2rem; 
+    margin-top: 2rem; 
+}
+
+
+.container5 ul,
+.container5 ol {
+    color: var(--color-bg);
+}
+
+.admissiondiv li {
+    margin-bottom: 2rem;
+
+
+}
+
+.admissiongrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:3rem;
+}
+
+.admissionleft {
+    background-color: white;
+    margin: 0;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.notice-release {
+    position: relative;
+    padding: 5px;
+    border: 2px solid var(--color-bg);
+    border-radius: 8px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    
+  }
+  .notice-release a{
+    color: var(--color-bg);
+  }
+  .notice-release a:hover{
+    color: #0056b3;
+  }
+  
+  .notice-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+    animation: iconAnimation 1s infinite alternate;
+  }
+  
+  
+  @keyframes iconAnimation {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-5px);
+    }
+  }
+  
+.admissionright {
+    background-color: var(--color-bg);
+    margin: 0;
+}
+
+
+.container5 p {
+    margin-bottom: 3px;
+    color: var(--color-bg);
+    margin-top: 5px; 
+    font-size: 1rem; 
+}
+
+strong {
+    color: #0066cc;
+}
+
+h2:last-of-type {
+    margin-bottom: 0;
+}
+.admissiondiv a{
+    display: flex;
+    /* left:10rem; */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 12px; 
+    border-radius: 12px;
+    margin-top: 1rem;
+    color: white;
+    background-color: var(--color-bg);
+    border: 0.25px solid var(--color-bg);
+    transition: var(--transition);
+    animation: fadeIn 1s ease-out;
+    z-index: 1000000000000;
+}
+.modeanchor:hover {
+    background-color:white;
+    color: var(--color-bg);
+}
+
+@media screen and (max-width: 1024px) {
+  .container5 {
+      margin-top: 9rem;
+  }
+
+  .admissiongrid {
+      grid-template-columns: 1fr;
+      gap: 7rem;
+  }
+
+  .modeanchor {
+      padding: 15px;
+  }
+
+  .eligibility-popup {
+      padding: 20px;
+  }
+
+  .eligibility-popup iframe {
+      height: 50vh;
+  }
+  .flipbook{
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .container5 {
+      margin: 25% 1% 1% 1%;
+      width: fit-content;
+  }
+  .admissionleft{
+    width: fit-content;
+    margin: auto;
+  }
+  .noticeheader{
+    width: fit-content;
+    padding: auto;
+  }
+  .container5 h1{
+    font-size: large;
+  }
+  .noticeheader h3{
+    font-size: smaller;
+  }
+  .noticeheader p{
+    font-size: small;
+  }
+  .notice-release{
+    width:fit-content ;
+  }
+
+  .admissiongrid {
+      gap: 10px;
+      width: fit-content;
+  }
+
+  .modeanchor {
+      padding: 10px;
+  }
+  .linkanchor{
+font-size: xx-small;
+width: fit-content;
+  }
+
+  .eligibility-popup {
+
+    padding: 2px;
+    
+     
+}
+
+.eligibility-popup iframe {
+    width: fit-content;
+    height: 45vh;
+    margin: 0;
+    border: none;
+    z-index: 9999;
+}
+.flipbook{
+  margin: auto;
+  width: auto;
+}
+}
+
+
+
+  

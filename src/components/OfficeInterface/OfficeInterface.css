@@ -1,0 +1,159 @@
+.cover2{
+    background: url(login.png);
+    height: auto;
+    margin-top: 5.5rem;
+    padding-top:7rem;
+    padding-bottom: 7rem;
+}
+.office-Interface-container {
+    width: 80%;
+    margin: 7rem auto;
+    position: relative;
+  }
+  
+  .office-Interface-container>h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0056b3;
+  }
+  
+  .header-buttons {
+    position: absolute;
+    top: 1rem;
+    right: 1rem; 
+  }
+  
+  .header-buttons button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--color-bg2);
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .header-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  table {
+    width: 100%;
+    border: .25rem solid var(--color-bg2);
+    border-collapse: collapse;
+  }
+  
+  table th, table td {
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid var(--color-bg2);
+  }
+  
+  table th {
+    background-color: var(--color-bg2);
+    color: white;
+  }
+  .reason-popup
+  {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(18, 3, 3, 0.764);
+    z-index: 9999999;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  }
+  .close{
+    padding:.75rem;
+    position: absolute;
+    top:0rem;
+    right:0rem;
+    border-top-right-radius: 1rem ;
+    color: #fff;
+    background-color: var(--color-bg2);
+    font-size: small;
+    cursor: pointer;
+  }
+  .close:hover{
+    background-color: #0056b3;
+  }
+  .reason-popup-content>p{
+    background-color: var(--color-bg2);
+    padding: 2rem;
+    word-wrap: break-word;
+    color: #fff;
+    border-radius: 2rem;
+    text-align: center  ;
+    font-weight: bolder;
+    font-size: smaller;
+  }
+  .viewbtn{
+    border-radius: 1rem;
+    padding: .75rem;
+    background-color: var(--color-bg2);
+    color: #fff;
+    transition: var(--transition);
+    cursor: pointer;
+  }
+  .viewbtn:hover{
+    background-color: #0056b3;
+  }
+  .upload{
+    width: auto;
+  }
+  .changestate{
+    padding: .5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--color-bg2);
+    transition: var(--transition);
+  }
+  .changestate:hover{
+    background-color: #0056b3;
+  }
+
+  /* For tablets */
+@media screen and (max-width: 768px) {
+  .cover2 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-top: 4rem;
+  }
+  
+  .office-Interface-container {
+    width: 90%;
+    margin: 5rem auto;
+  }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 480px) {
+  .cover2 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  
+  .office-Interface-container {
+    width: 95%;
+    margin: 3rem auto;
+  }
+
+  .header-buttons {
+    top: 0.5rem;
+    right: 0.5rem; 
+  }
+
+  .header-buttons button {
+    padding: 6px 12px;
+  }
+}
